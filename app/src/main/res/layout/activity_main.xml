@@ -11,36 +11,58 @@
     android:paddingTop="16dp"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:id="@+id/message"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello there"
-        android:layout_marginLeft="16dp"
-        tools:layout_editor_absoluteX="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="BMI Calculator"
+        android:textSize="30dp" />
 
-      />
+    <EditText
+        android:id="@+id/userHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:ems="10"
+        android:hint="Enter height"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/userWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181dp"
+        android:ems="10"
+        android:hint="Enter weight"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:onClick="buttonClicked"
-        android:text="Button"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="194dp"
+        android:text="Calculate BMI"
+        android:onClick="buttonClicked"/>
 
-    <EditText
-        android:id="@+id/inputMessage"
+    <TextView
+        android:id="@+id/userBMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="Enter some text here..."
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="142dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:text="Your BMI..."
+        android:textSize="20dp"/>
+
 
 </android.widget.RelativeLayout>
