@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonClicked(View v){
-        TextView textViewResult = (TextView) findViewById(R.id.userBMI);
+        /*TextView textViewResult = (TextView) findViewById(R.id.userBMI);
         EditText editTextHeight = (EditText) findViewById(R.id.userHeight);
         EditText editTextWeight = (EditText) findViewById(R.id.userWeight);
         double userHeight = Double.parseDouble(editTextHeight.getText().toString());
         double userWeight = Double.parseDouble(editTextWeight.getText().toString());
         double bmi = userWeight / (userHeight * userHeight);
-        textViewResult.setText(Double.toString(bmi));
+        textViewResult.setText(Double.toString(bmi));*/
     }
 }
