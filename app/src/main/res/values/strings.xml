@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">BizTech tutorial App</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string-array name="options">
+        <item>Eat</item>
+        <item>Drink</item>
+        <item>Other</item>
+    </string-array>
 </resources>
