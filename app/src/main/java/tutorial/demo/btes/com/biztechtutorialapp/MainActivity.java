@@ -1,5 +1,6 @@
 package tutorial.demo.btes.com.biztechtutorialapp;
 
+import android.content.Intent;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onCreate");
+    }
+
+    public void buttonClicked(View v) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+
     }
 
     @Override
